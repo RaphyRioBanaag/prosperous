@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prosperous - Companies offering deals and services">
+    <title>Prosperous</title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <div class="logo">
+            <h1><a href="Main.html">Prosperous</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <!-- Removed Home button, title serves the same purpose -->
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="Error message.html">Chat Room</a></li>
+                <li><a href="Error message.html">Contact Service</a></li>
+                <li><a href="Error message.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <!-- Dark/Light Mode Switch -->
+        <div class="mode-toggle">
+            <label class="switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <section class="offer-feed">
+            <h2>Latest Offers</h2>
+            <div class="offers">
+                <div class="offer-card">
+                    <a href="Error message.html">
+                        <h3>Company A</h3>
+                        <p>Special deal on product X. Limited time offer.</p>
+                    </a>
+                </div>
+                <div class="offer-card">
+                    <a href="Error message.html">
+                        <h3>Company B</h3>
+                        <p>Exclusive service package for new customers.</p>
+                    </a>
+                </div>
+                <div class="offer-card">
+                    <a href="Error message.html">
+                        <h3>Company C</h3>
+                        <p>Discount on all services. First 100 customers only!</p>
+                    </a>
+                </div>
+                <div class="offer-card">
+                    <a href="Error message.html">
+                        <h3>Company D</h3>
+                        <p>Free consultation for business solutions. Limited time.</p>
+                    </a>
+                </div>
+                <div class="offer-card">
+                    <a href="Error message.html">
+                        <h3>Company E</h3>
+                        <p>New product launch with a 20% discount.</p>
+                    </a>
+                </div>
+                <div class="offer-card">
+                    <a href="Error message.html">
+                        <h3>Company F</h3>
+                        <p>Get a free trial on our premium software package.</p>
+                    </a>
+                </div>
+                <div class="offer-card">
+                    <a href="Error message.html">
+                        <h3>Company G</h3>
+                        <p>Special offers on tech products for first-time buyers.</p>
+                    </a>
+                </div>
+                <div class="offer-card">
+                    <a href="Error message.html">
+                        <h3>Company H</h3>
+                        <p>50% off on select items. Hurry before the deal ends!</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Prosperous | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        // Theme switch logic
+        const themeSwitch = document.getElementById('theme-switch');
+        const body = document.body;
+
+        themeSwitch.addEventListener('change', () => {
+            if (themeSwitch.checked) {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+            } else {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+            }
+        });
+    </script>
+</body>
+</html>
